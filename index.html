@@ -33,14 +33,30 @@
 
 
 <div style="text-align: center;">
-	<h2> json => oc property  </h3>
-	<p style="color: orange">  使用json格式数据 自动生成oc数据模型所需属性  </p>
+	<h2> json => ios property  </h3>
+	<p style="color: orange">  使用json格式数据 自动生成 oc or swift 数据模型所需属性  </p>
+</div>
+
+<div style="text-align: center;margin-top: 30px">
+
+	<button style="margin-right: 100px;height: 40px;background-color:orange ;border-color: transparent;border-radius: 5px;color: #ffffff" id="btnSwiftyJson">
+		SwiftyJSON
+	</button> 
+
+	<button style="margin-right: 100px;height: 40px;background-color:orange ;border-color: transparent;border-radius: 5px;color: #ffffff" id="btnObjectMapper">
+		ObjectMapper
+	</button> 
+	<button style="margin-right: 0;height: 40px;background-color:orange ;border-color: transparent;border-radius: 5px;color: #ffffff" id="btnHandyJSON">
+		HandyJSON
+	</button>
+ 
+	
 </div>
 
 <div style="margin: 40px 50px; margin-top: 50px; text-align: center;">
 
-	<textarea style="border-color: transparent;border-radius: 10px;background-color: #FFFFF0;height: 300px;width: 48%;padding-left: 10px;padding-top: 10px;cols:20" id="textarea_in" placeholder="请输入json"></textarea>
-	<textarea style="border-color: transparent;border-radius: 10px;background-color: #AFEEEE;height: 300px;width: 48%;padding-left: 10px;padding-top: 10px;cols:20" id="textarea_out" placeholder="输出property区域"></textarea>
+	<textarea style="border-color: transparent;border-radius: 10px;background-color: #FFFFF0;height: 300px;width: 48%;padding-left: 10px;padding-top: 10px;cols:20;font-size: 1em" id="textarea_in" placeholder="请输入json"></textarea>
+	<textarea style="border-color: transparent;border-radius: 10px;background-color: #AFEEEE;height: 300px;width: 48%;padding-left: 10px;padding-top: 10px;cols:20;font-size: 1em" id="textarea_out" placeholder="输出property区域"></textarea>
 
 	<br>
 </div>
@@ -49,6 +65,15 @@
 	<button style="padding: 10;height:30px; margin-top: 20px;width: 150px;background-color: orange;border-radius: 5px;border-color: transparent;color: white" id="btnid1" > 转化 </button>
 	<p style="margin-bottom: 20px;padding-bottom: 15px;color: #D3D3D3" > 生成数据自动复制到粘贴板 </p>
 </div>
+
+<!-- 　<select id='checkedLevel' style="width:120px;height:128px;" multiple="multiple">
+　　　　<option value="1">选项1</option>
+　　　　<option value="2">选项2</option>
+　　　　<option value="3">选项3</option>
+　　　　<option value="4">选项4</option>
+　　　　<option value="5">选项5</option>
+　　　　<option value="6">选项6</option>       
+　　</select>   --> 
 
 
 
