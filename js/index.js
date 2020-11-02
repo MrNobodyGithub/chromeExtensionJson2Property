@@ -152,13 +152,13 @@ $('#btnid1').click(e => {
     		charType = "NSString * "
     		refType = "copy"
     	}else if(check == "number"){
-    		charType = "Int "
+    		charType = "NSInteger "
     		refType = "assign"
     	}
     	listStr = listStr + "/* \n"
     	listStr = listStr + "*" + key + ":" + value + "\n"
     	listStr = listStr + "*/" + "\n"
-    	listStr = listStr + "@property(nonatimic,"+ refType+ ")" + charType + key + ";\n";
+    	listStr = listStr + "@property(nonatomic,"+ refType+ ")" + charType + key + ";\n";
     	listStr = listStr + "\n";
     	// listStr = listStr +  check + " " +  key +":"  + value + "\n\n"
     }
@@ -194,7 +194,7 @@ function dealJson()
 		listStr = listStr + "/* \n"
 		listStr = listStr + "*" + key + ":" + value + "\n"
 		listStr = listStr + "*/" + "\n"
-		listStr = listStr + "@property(nonatimic,copy)" + "NSString * " + key + "\n";
+		listStr = listStr + "@property(nonatomic,copy)" + "NSString * " + key + "\n";
 		listStr = listStr + "\n";
 		// listStr = listStr +  check + " " +  key +":"  + value + "\n\n"
 	}
